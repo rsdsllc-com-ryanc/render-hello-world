@@ -1,3 +1,17 @@
 <div style = "width:100%;margin-top:100px;text-align:center;font-size:50px;font-weight:bold;">
   Hello World!
 </div>
+
+<div style = "width:100%;margin-top:100px;text-align:center;font-size:20px;font-weight:bold;color:#FF0000;">
+  MY_CUSTOM_VAR:
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <% if ENV["MY_CUSTOM_VAR"] %>
+    <span style="margin-left:30px;font-weight:normal;color:#000000;">
+      <%= ENV["MY_CUSTOM_VAR"] %>
+    </span>
+  <% else %>
+    <span style="margin-left:30px;font-weight:normal;font-style:italic;color:#AAAAAA;">
+      env var not found
+    </span>
+  <% end %>
+</div>
