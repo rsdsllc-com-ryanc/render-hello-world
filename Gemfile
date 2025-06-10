@@ -59,3 +59,16 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+# ============================================================
+#   Added by me during POC 
+# ============================================================
+
+# sidekiq and status tab capability
+gem 'sidekiq', '7.3.9'
+gem 'sidekiq-status', '3.0.3'
+gem 'sidekiq-scheduler', '6.0.1'
+
+# for sidekiq jobs and caching geocoding
+gem "redis", '5.4.0'
