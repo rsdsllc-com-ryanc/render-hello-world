@@ -72,3 +72,9 @@ gem 'sidekiq-scheduler', '6.0.1'
 
 # for sidekiq jobs and caching geocoding
 gem "redis", '5.4.0'
+
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 1.5'
+
+# postgis support
+gem 'activerecord-postgis-adapter'
