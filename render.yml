@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: render-hello-world-web
+    env: ruby
+    buildCommand: bundle install && bundle exec rake assets:precompile
+    startCommand: bundle exec puma -C config/puma.rb
